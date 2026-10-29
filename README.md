@@ -142,32 +142,4 @@ Open the local address printed in the terminal, commonly `http://127.0.0.1:5000/
 
 The project compares multiple models, with XGBoost achieving the highest reported accuracy in the current results. For a stronger and more reproducible evaluation, report the test-set size and split strategy, and include precision, recall, F1-score, and the confusion matrix. For phishing detection, recall for phishing URLs and false-positive rates are particularly important because accuracy alone can hide costly mistakes.
 
-## Possible Improvements
 
-- Add a `requirements.txt` with pinned, tested dependency versions.
-- Add unit tests for URL feature extraction and prediction handling.
-- Validate malformed URLs and handle missing or unexpected features gracefully.
-- Display a confidence or risk score only if it is calibrated and supported by the model.
-- Evaluate on a separate, newer dataset to test generalization to previously unseen URLs.
-- Add a REST API or browser extension after validating model performance and security.
-- Deploy behind HTTPS and add input validation, logging, and rate limiting before public use.
-
-## Resume-Ready Project Description
-
-**Smart URL Safety Checker | Python, Flask, XGBoost, scikit-learn, pandas**
-
-- Built a Flask web application that classifies submitted URLs as potentially legitimate or phishing using a machine-learning pipeline and 30+ URL-based features.
-- Compared multiple classifiers and achieved **97% reported test accuracy with XGBoost**; evaluated alternatives including Decision Tree, KNN, Logistic Regression, and Naive Bayes.
-- Developed a lightweight HTML/CSS interface for real-time URL submission and prediction.
-
-Only retain the 97% figure if it matches your actual held-out test results. Be ready to explain the dataset, train/test split, feature extraction, evaluation metrics, and how the Flask app loads and uses the saved model.
-
-## Repository Notes
-
-- Do not commit secrets, credentials, or local environment files.
-- If the dataset is large or has redistribution restrictions, document its source and provide download instructions instead of committing it.
-- Add a license only if you have chosen terms for reuse.
-
-## Disclaimer
-
-This project is intended for educational and research purposes. Its predictions can be wrong and should not be treated as a definitive security verdict. Use established security tools and safe browsing practices when evaluating suspicious links.
