@@ -10,7 +10,7 @@ Smart URL Safety Checker is a machine-learning-powered web application that anal
 
 ### Home page
 
-![Smart URL Safety Checker home page](image/Screenshot 2025-07-15 102832.png)
+(image/Screenshot 2025-07-15 102832.png)
 
 ### Example prediction
 
